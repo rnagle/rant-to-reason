@@ -14,6 +14,11 @@
   var renderCards = function(level, statements) {
     $('.render').html('');
 
+    if (statements.indexOf("$difficulty$") >= 0) {
+      window.location.href = "deck.html?id=difficulty";
+      return;
+    }
+
     var span = '6';
     if (statements.length > 2)
       span = '4';
@@ -31,6 +36,8 @@
 
       $('.render').append(el);
     });
+
+    equalizeCardHeights();
   };
 
   var renderNext = function(level, statement) {
@@ -73,12 +80,33 @@
     return false;
   };
 
+  var radioClick = function(e) {
+    var target = $(e.currentTarget);
+
+    if (target.val() == 'yes') {
+      $('.your-email').show();
+    }
+
+    if (target.val() == 'no') {
+      $('.your-email').hide();
+    }
+  };
+
   var bindEvents = function() {
     $('body').on('click', '.card a', statementClick);
     $('body').on('submit', 'form', formSubmit);
+    $('body').on('click', '[type="radio"]', radioClick);
+  };
+
+  var equalizeCardHeights = function() {
+    var heights = _.map($('.card-inner'), function(el) { return $(el).outerHeight(); }),
+        maxHeight = _.max(heights);
+
+    $('.card-inner').css('min-height', maxHeight);
   };
 
   $(document).ready(function() {
+    //$(window).on('resize', equalizeCardHeights);
     $.getJSON('data/' + aspect + '.json', render);
     bindEvents();
   });

@@ -50,6 +50,11 @@ body {
   background: #fff;
 }
 
+.card .responses,.card.responses p{
+  text-align: left;
+  font-size: .5em;
+}
+
 .explain-inner {
   max-width: 700px;
   margin: 1em auto;
@@ -60,8 +65,10 @@ body {
   font-size: 1.25em;
 }
 
-.explain-inner .radio {
-  margin-left: 1.25em;
+.explain-heading {
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .submit-wrap {

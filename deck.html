@@ -36,11 +36,10 @@
     </script>
 
     <script type="template/javascript" id="explain-tmpl">
+    <div class="row">
       <div class="explain col-xs-12">
         <div class="explain-inner">
-          <h2>Thanks!</h2>
-          <p>We really appreciate your input.</p>
-          <p>So, to recap, you said the game was:</p>
+          <h2 class="explain-heading">To recap:</h2>
           <div class="responses">
             <ul>
             <% _.each(responses, function(statement, idx) { %>
@@ -48,29 +47,27 @@
             <% }); %>
             </ul>
           </div>
-
-          <p>If you want, you can tell us more about why you feel this way:</p>
-          <form class="explainer">
-            <div class="form-group">
-              <textarea class="form-control" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-              <p>Would you be willing to talk more about this with a human?</p>
-            </div>
-            <div class="radio">
-              <input type="radio" id="contact" name="contact" checked value="yes">Yes please!</input>
-            </div>
-            <div class="radio">
-              <input type="radio" id="contact" name="contact" value="no">Nope. No thanks.</input>
-            </div>
-            <div class="your-email form-group">
-              <p>What's your email address?</p>
-              <input type="text" class="form-control" placeholder="address@example.com"></input>
-            </div>
-            <div class="form-group submit-wrap">
-              <input type="submit" class="btn btn-default btn-lg" name="submit-explanation" value="That's how I feel"></input>
-            </div>
-          </form>
+          <img src="img/bubble.png">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="explain col-xs-8 col-xs-offset-2">
+          <div class="explain-inner">
+            <h2 class="explain-heading">Care to elaborate?</h2>
+            <form class="explainer">
+              <div class="form-group">
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+              <h2 class="explain-heading">Email? No pressure.</h2>
+              <div class="form-group">
+                <textarea class="form-control" rows="1"></textarea>
+              </div>
+              <div class="form-group submit-wrap">
+                <input type="submit" class="btn btn-default btn-lg" name="submit-explanation" value="That's how I feel"></input>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </script>

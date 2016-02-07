@@ -1,0 +1,41 @@
+[{
+  "decisions": {
+    "a": [
+      "Too easy",
+      "Too hard"
+    ],
+
+    "b": {
+      "Too easy": [
+        "Everything was so obvious",
+        "The game was over too fast",
+        "I feel like I've played this before",
+        "This is for people who've never played games before"
+      ],
+      "Too hard": [
+        "I keep failing",
+        "I'm confused",
+        "I got stuck"
+      ]
+    },
+
+    "c": {
+      "I keep failing": [],
+      "I'm confused": [
+        "I don't know what to do",
+        "Too much to keep track of",
+        "Too many rules"
+      ],
+      "I got stuck": [
+        "There was no way to skip",
+        "There was no information on how to get past"
+      ]
+    }
+  },
+
+  "headings": [
+    "So, how was it?",
+    "Oh yeah?",
+    "Can you say why?"
+  ]
+}]

@@ -71,10 +71,6 @@
     responses.push(statement);
   };
 
-  var renderBreadcrumbs = function() {
-  
-  };
-
   var statementClick = function(e) {
     var target = $(e.currentTarget),
         level = target.data('level'),

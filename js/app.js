@@ -76,8 +76,10 @@
         level = target.data('level'),
         statement = target.data('statement');
 
+    hideCards();
     recordResponse(level, statement);
     renderNext(level, statement);
+    revealCards();
     return false;
   };
 
@@ -109,6 +111,14 @@
         maxHeight = _.max(heights);
 
     $('.card-inner').css('min-height', maxHeight);
+  };
+
+  var hideCards = function() {
+    $('.render').hide();
+  };
+
+  var revealCards = function() {
+    $('.render').fadeIn(250);
   };
 
   $(document).ready(function() {

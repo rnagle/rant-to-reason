@@ -21,38 +21,12 @@
         <div class="col-xs-12">
         <h1>Choose a deck:</h1>
         <ul class="choose-a-deck">
-          <li><a href="difficulty.html">Difficulty</a></li>
+          <li><a href="deck.html?id=difficulty">Difficulty</a></li>
+          <li><a href="deck.html?id=engagement">Engagement</a></li>
         </ul>
         </div>
       </div>
     </div>
-
-    <script type="template/javascript" id="card-tmpl">
-      <div class="card col-xs-<%= span %> <%= level %>">
-        <div class="card-inner">
-          <a href="#" data-level="<%= level %>" data-statement="<%= statement %>"><%= statement %></a>
-        </div>
-      </div>
-    </script>
-
-    <script type="template/javascript" id="explain-tmpl">
-      <div class="explain col-xs-12">
-        <div class="explain-inner">
-          <h2>Thanks for being cool or whatever</h2>
-          <p>Tell us a bit more about why you feel this way:</p>
-          <form class="explainer">
-            <div class="form-group">
-              <textarea class="form-control" rows="3"></textarea>
-              <div class="submit-wrap">
-                <input type="submit" class="btn btn-primary btn-lg" name="submit-explanation" value="That's how I feel"></input>
-              </div>
-            </div>
-          </form>
-
-          <p>Maybe you don't want to. That's totally cool too. <a href="http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg">Have a picture of a kitten as token of thanks</a></p>
-        </div>
-      </div>
-    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

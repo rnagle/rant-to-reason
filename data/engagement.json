@@ -1,0 +1,83 @@
+[{
+  "decisions": {
+    "a": [
+      "Fun",
+      "Boring"
+    ],
+
+    "b": {
+      "Fun": [
+        "I was constantly surprised",
+        "It was a good challenge",
+        "It was funny",
+        "It let me zone out and relax"
+      ],
+      "Boring": [
+        "I didn't see the point",
+        "It was too easy",
+        "It was repetitive",
+        "The game was predictable",
+        "The characters were boring"
+      ]
+    },
+
+    "c": {
+      "I was constantly surprised":[
+        "I wanted to see where things went",
+        "The characters were well-developed", 
+        "The story was engaging",
+        "The game was really smart"
+      ],
+        "It was a good challenge":[
+          "I had to think hard",
+          "I had to keep trying",
+          "I wanted to beat it"
+        ],
+        "It was funny":[
+          "...even when things didn't work out",
+          "The dialogue was tight",
+          "It's a good premise",
+          "The game itself had a sense of humor"
+        ],
+        "It let me zone out and relax":[
+          "I understood what to do",
+          "The puzzles weren't too involved",
+          "The stakes weren't too high",
+          "The aesthetics were really pleasing"
+        ],
+        "I didn't see the point":[
+          "The end goal wasn't clear",
+          "There was no pay-off",
+          "I had to work too hard to get there",
+          "The reward was useless"
+        ],
+        "It was too easy":[
+          "**PULL EASY PACK**"
+        ],
+        "It was repetitive":[
+          "The whole game was just variations on a theme",
+          "I never had to learn anything new",
+          "I never had to adapt",
+          "It's the same puzzle over and over",
+          "It never got harder",
+          "It's just my thumb doing this the whole time"
+        ],
+        "The game was predictable":[
+          "It's a one-trick pony",
+          "It's just a ripoff of ____"
+        ],
+        "The characters were boring":[
+          "They didn't seem real",
+          "I couldn't relate to them",
+          "They behaved unpredictably",
+          "They behaved too predictably"
+        ]
+    }
+  },
+
+  "headings": [
+    "So, how was it?",
+    "Oh yeah?",
+    "Can you say why?"
+  ]
+}]

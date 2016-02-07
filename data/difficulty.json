@@ -20,7 +20,10 @@
     },
 
     "c": {
-      "I keep failing": [],
+      "I keep failing": [
+        "I couldn't figure it out",
+        "My hands don't work like that"
+      ],
       "I'm confused": [
         "I don't know what to do",
         "Too much to keep track of",

@@ -2,7 +2,8 @@
   var $ = jQuery,
       headings,
       decisions,
-      levels;
+      levels,
+      responses = [];
 
   var render = function(data) {
     decisions = data[0]['decisions'],
@@ -61,9 +62,17 @@
     $('.render').html('');
 
     var tmpl = _.template($('#explain-tmpl').html());
-    var el = tmpl();
+    var el = tmpl({ responses: responses });
 
     $('.render').append(el);
+  };
+
+  var recordResponse = function(level, statement) {
+    responses.push(statement);
+  };
+
+  var renderBreadcrumbs = function() {
+  
   };
 
   var statementClick = function(e) {
@@ -71,6 +80,7 @@
         level = target.data('level'),
         statement = target.data('statement');
 
+    recordResponse(level, statement);
     renderNext(level, statement);
     return false;
   };

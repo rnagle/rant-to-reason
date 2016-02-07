@@ -40,6 +40,15 @@
         <div class="explain-inner">
           <h2>Thanks!</h2>
           <p>We really appreciate your input.</p>
+          <p>So, to recap, you said the game was:</p>
+          <div class="responses">
+            <ul>
+            <% _.each(responses, function(statement, idx) { %>
+              <li><%= statement %></li>
+            <% }); %>
+            </ul>
+          </div>
+
           <p>If you want, you can tell us more about why you feel this way:</p>
           <form class="explainer">
             <div class="form-group">

@@ -29,3 +29,8 @@
   font-size: 28px;
   text-align: center;
 }
+
+.choose-a-deck {
+  font-size: 24px;
+  list-style-type: none;
+}

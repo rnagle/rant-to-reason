@@ -79,7 +79,7 @@
   };
 
   $(document).ready(function() {
-    $.getJSON('data/difficulty.json', render);
+    $.getJSON('data/' + aspect + '.json', render);
     bindEvents();
   });
 })();

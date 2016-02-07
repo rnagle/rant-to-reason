@@ -1,0 +1,31 @@
+.card {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-inner {
+  padding: 1em;
+  margin: 1em;
+  border: 2px solid #ddd;
+}
+
+.explain-inner {
+  max-width: 700px;
+  margin: 1em auto;
+  padding: 2em;
+  border: 2px solid #ddd;
+}
+.submit-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.submit-wrap input {
+  margin: 1em auto;
+}
+
+.level-heading {
+  font-size: 28px;
+  text-align: center;
+}
